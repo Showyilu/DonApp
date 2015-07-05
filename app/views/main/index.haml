@@ -1,88 +1,3 @@
-/
-  Slider
-  \=======================================
-.mstslider
-  / masterslider
-  #masterslider.master-slider.ms-skin-default
-    / slide
-    .ms-slide.slide-1{"data-delay" => "7"}
-      / slide background
-      = image_tag "sliders/bg1.jpg"
-      .ms-layer.text1{"data-delay" => "300", "data-duration" => "900", "data-ease" => "easeOutExpo", "data-effect" => "bottom(50)", :style => "left:116px; top:123px"}
-        NEED LEGAL
-        %br/
-        ASSISTANCE?
-      .ms-layer.text2{"data-delay" => "500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "left(100)", :style => "left:116px; top:305px"}
-        Get immediate free information and advice confidential from the
-        %br/
-        experienced attorneys on most common legal issues.
-      .ms-layer.sldbut1{"data-delay" => "500", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "right(50)", :style => "left:116px; top:455px"}
-        %a{:href => "#"} Learn More
-    / end slide
-    / slide
-    .ms-slide.slide-2{"data-delay" => "7"}
-      / slide background
-      = image_tag "sliders/bg2.jpg"
-      .ms-layer.text1{"data-delay" => "600", "data-duration" => "900", "data-ease" => "easeOutExpo", "data-effect" => "bottom(50)", :style => "left:116px; top:120px"}
-        Making
-        %br/
-        Your
-        %br/
-        Priorities
-        %br/
-        Ours
-      .ms-layer.sldbut1{"data-delay" => "900", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "right(50)", :style => "left:120px; top:466px"}
-        %a{:href => "#"} Learn More
-    / end slide
-    / slide
-    .ms-slide.slide-3{"data-delay" => "7"}
-      / slide background
-      = image_tag "sliders/bg3.jpg"
-      .ms-layer.text1.small{"data-delay" => "600", "data-duration" => "900", "data-ease" => "easeOutExpo", "data-effect" => "bottom(50)", :style => "left:116px; top:113px"}
-        Get
-        %br/
-        confidential
-        %br/
-        legal advice
-      .ms-layer.text2{"data-delay" => "1100", "data-duration" => "1600", "data-ease" => "easeOutExpo", "data-effect" => "left(100)", :style => "left:116px; top:327px"} Get free information & advice confidential on most legal issues.
-      .ms-layer.sldbut1{"data-delay" => "1300", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "right(50)", :style => "left:116px; top:445px"}
-        %a{:href => "#"} Learn More
-    / end slide
-    / slide
-    .ms-slide.slide-4{"data-delay" => "7"}
-      / slide background
-      = image_tag "sliders/bg4.jpg"
-      .ms-layer.text1.smalldark{"data-delay" => "600", "data-duration" => "900", "data-ease" => "easeOutExpo", "data-effect" => "bottom(50)", :style => "left:116px; top:143px"}
-        Experienced
-        %br/
-        Attorneys
-      .ms-layer.text2{"data-delay" => "900", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "left(100)", :style => "left:116px; top:305px"}
-        Get immediate free information and advice confidential from the
-        %br/
-        experienced attorneys on most common legal issues.
-      .ms-layer.sldbut1{"data-delay" => "900", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "right(50)", :style => "left:116px; top:455px"}
-        %a{:href => "#"} Learn More
-    / end slide
-    / slide
-    .ms-slide.slide-5{"data-delay" => "7"}
-      / slide background
-      = image_tag "sliders/bg1.jpg"
-      .ms-layer.video-box.two.imgframe1{"data-duration" => "3000", "data-ease" => "easeOutExpo", "data-effect" => "bottom(100)", "data-type" => "video", :style => "right:115px;\r\n            top:115px; width:580px; height:360px"}
-        %iframe{:allowfullscreen => "", :src => "http://player.vimeo.com/video/49753231"}
-      .ms-layer.text1.small{"data-delay" => "300", "data-duration" => "900", "data-ease" => "easeOutExpo", "data-effect" => "bottom(50)", :style => "left:116px; top:120px"}
-        Responsive
-        %br/
-        Multe Use
-      .ms-layer.text2{"data-delay" => "900", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "left(100)", :style => "left:116px; top:282px"}
-        Many web sites still infancy various versions have
-        %br/
-        over the years by sometimes on purpose.
-      .ms-layer.sldbut1{"data-delay" => "900", "data-duration" => "2000", "data-ease" => "easeOutExpo", "data-effect" => "right(50)", :style => "left:116px; top:432px"}
-        %a{:href => "#"} Learn More
-    / end slide
-  / end of masterslider
-/ end slider
-.clearfix
 .feature_sec1
   .container
     .title11
@@ -242,7 +157,7 @@
         Need Legal Assistance - Do You Have a Claim?
         %em Feel free to get in touch with any enquiries and one of our friendly members of staff will get back to you as soon as possible.
     .cforms
-      %form#sky-form.sky-form{:action => "demo-contacts.php", :method => "post"}
+      %form#sky-form.sky-form{:action => "contact-form", :method => "post"}
         %fieldset
           .row
             .col.col-4
@@ -278,15 +193,16 @@
     .clearfix.margin_top4
 / end features section 9
 .clearfix
+
+
 :javascript
   (function($) {
-   "use strict";
+
     var slider = new MasterSlider();
     // adds Arrows navigation control to the slider.
     slider.control('arrows');
     slider.control('bullets');
-  
-     slider.setup('masterslider' , {
+    slider.setup('masterslider' , {
        width:1400,    // slider standard width
        height:580,   // slider standard height
        space:0,
@@ -296,75 +212,63 @@
        autoplay:true,
        view:"basic"
     });
+
+     $("#sky-form").validate(
+     {         
+       // Rules for form validation
+       rules:
+       {
+         name:
+         {
+           required: true
+         },
+         email:
+         {
+           required: true,
+           email: true
+         },
+         message:
+         {
+           required: true,
+           minlength: 10
+         }
+       },
+                 
+       // Messages for form validation
+       messages:
+       {
+         name:
+         {
+           required: 'Please enter your name',
+         },
+         email:
+         {
+           required: 'Please enter your email address',
+           email: 'Please enter a VALID email address'
+         },
+         message:
+         {
+           required: 'Please enter your message'
+         }
+       },
+                 
+       // Ajax form submition          
+       submitHandler: function(form)
+       {
+         $(form).ajaxSubmit(
+         {
+           success: function()
+           {
+             $("#sky-form").addClass('submited');
+           }
+         });
+       },
+       
+       // Do not change code below
+       errorPlacement: function(error, element)
+       {
+         error.insertAfter(element.parent());
+       }
+     });
   
   })(jQuery);
-:javascript
-  (function($) {
-   "use strict";
-  
-    $(function()
-    {
-      // Validation
-      $("#sky-form").validate(
-      {         
-        // Rules for form validation
-        rules:
-        {
-          name:
-          {
-            required: true
-          },
-          email:
-          {
-            required: true,
-            email: true
-          },
-          message:
-          {
-            required: true,
-            minlength: 10
-          }
-        },
-                  
-        // Messages for form validation
-        messages:
-        {
-          name:
-          {
-            required: 'Please enter your name',
-          },
-          email:
-          {
-            required: 'Please enter your email address',
-            email: 'Please enter a VALID email address'
-          },
-          message:
-          {
-            required: 'Please enter your message'
-          }
-        },
-                  
-        // Ajax form submition          
-        submitHandler: function(form)
-        {
-          $(form).ajaxSubmit(
-          {
-            success: function()
-            {
-              $("#sky-form").addClass('submited');
-            }
-          });
-        },
-        
-        // Do not change code below
-        errorPlacement: function(error, element)
-        {
-          error.insertAfter(element.parent());
-        }
-      });
-    });     
-  
-  })(jQuery);
-/ MasterSlider
-= javascript_include_tag "masterslider/jquery.easing.min.js"
-= javascript_include_tag "masterslider/masterslider.min.js"

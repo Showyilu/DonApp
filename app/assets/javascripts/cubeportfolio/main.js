@@ -1,6 +1,5 @@
 (function ($, window, document, undefined) {
     'use strict';
-
     var gridContainer = $('#grid-container'),
         filtersContainer = $('#filters-container'),
         wrap, filtersCallback;

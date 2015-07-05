@@ -35,7 +35,7 @@
     = stylesheet_link_tag "javascripts/mainmenu/bootstrap.min.css"
     = stylesheet_link_tag "javascripts/mainmenu/menu.css"
     / MasterSlider
-    = stylesheet_link_tag "javascripts/masterslider/style/masterslider.css"
+    -# = stylesheet_link_tag "javascripts/masterslider/style/masterslider.css"
     = stylesheet_link_tag "javascripts/masterslider/skins/default/style.css"
     / owl carousel
     = stylesheet_link_tag "javascripts/carouselowl/owl.transitions.css"
@@ -55,7 +55,7 @@
     = javascript_include_tag "mainmenu/customeUI.js"
     / MasterSlider
     = javascript_include_tag "masterslider/jquery.easing.min.js"
-    = javascript_include_tag "masterslider/masterslider.min.js"
+    -# = javascript_include_tag "masterslider/masterslider.min.js"
     / scroll up
     = javascript_include_tag "scrolltotop/totop.js"
     / <script src="/javascripts/scrolltotop/totop.js" type="text/javascript"></script>
@@ -64,7 +64,7 @@
     / forms
     = javascript_include_tag "form/jquery.form.min.js"
     = javascript_include_tag "form/jquery.validate.min.js"
-    / cubeportfolio
+  
     = javascript_include_tag "cubeportfolio/jquery.cubeportfolio.min.js"
     = javascript_include_tag "cubeportfolio/main.js"
     / tabs
@@ -140,7 +140,7 @@
                           %li.dropdown.yamm-fw
                             %a{:href => "point_test"} Point Test
                           %li.dropdown
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Resources
+                            %a{:href => "resources"} Resources
                           %li.dropdown
                             %a{:href => "contact"} Contact
                 / end Navigation Menu
@@ -164,7 +164,7 @@
                 %h6
                   No 1, James ST, WA 98122-1090 Fax: (888) 123-456-7899
                   %br/
-                  %a{:href => "#"} View Map
+                  %a{:href => "contact", target: "_blank"} View Map
               / end section
           / end footer
           .copyrights

@@ -12,4 +12,8 @@ class MainController < ActionController::Base
     render :point_test, :layout => 'application'
   end
 
+  def resources
+    render :resources, :layout => 'application'
+  end
+
 end
