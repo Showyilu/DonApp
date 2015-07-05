@@ -1,0 +1,181 @@
+!!!
+/[if IE 7 ] <html lang="en-gb" class="isie ie7 oldie no-js">
+/[if IE 8 ] <html lang="en-gb" class="isie ie8 oldie no-js">
+/[if IE 9 ] <html lang="en-gb" class="isie ie9 no-js">
+/ [if (gt IE 9)|!(IE)]><!
+%html.no-js{:lang => "en-gb"}
+  / <![endif]
+  %head
+    %title DonApp
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "", :name => "keywords"}/
+    %meta{:content => "", :name => "description"}/
+    / Favicon
+    %link{:href => "images/favicon.ico", :rel => "shortcut icon"}/
+    / this styles only adds some repairs on idevices
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Google fonts - witch you want to use - (rest you can just remove)
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Dancing+Script:400,700", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    = stylesheet_link_tag "reset.css"
+    = stylesheet_link_tag "style.css"
+    / animations
+    = stylesheet_link_tag "javascripts/animations/css/animations.min.css"
+    / responsive devices styles
+    = stylesheet_link_tag "responsive-leyouts.css"
+    / shortcodes
+    = stylesheet_link_tag "shortcodes.css"
+    / mega menu
+    = stylesheet_link_tag "javascripts/mainmenu/bootstrap.min.css"
+    = stylesheet_link_tag "javascripts/mainmenu/menu.css"
+    / MasterSlider
+    = stylesheet_link_tag "javascripts/masterslider/style/masterslider.css"
+    = stylesheet_link_tag "javascripts/masterslider/skins/default/style.css"
+    / owl carousel
+    = stylesheet_link_tag "javascripts/carouselowl/owl.transitions.css"
+    = stylesheet_link_tag "javascripts/carouselowl/owl.carousel.css"
+    / cubeportfolio
+    = stylesheet_link_tag "javascripts/cubeportfolio/cubeportfolio.min.css"
+    / forms
+    = stylesheet_link_tag "javascripts/form/sky-forms.css"
+    / tabs
+    = stylesheet_link_tag "javascripts/tabs/assets/css/responsive-tabs2.css"
+    / ######### JS FILES #########
+    = javascript_include_tag "universal/jquery.js"
+    / animations
+    = javascript_include_tag "animations/js/animations.min.js"
+    / mega menu
+    = javascript_include_tag "mainmenu/bootstrap.min.js"
+    = javascript_include_tag "mainmenu/customeUI.js"
+    / MasterSlider
+    = javascript_include_tag "masterslider/jquery.easing.min.js"
+    = javascript_include_tag "masterslider/masterslider.min.js"
+    / scroll up
+    = javascript_include_tag "scrolltotop/totop.js"
+    / <script src="/javascripts/scrolltotop/totop.js" type="text/javascript"></script>
+    / sticky menu
+    = javascript_include_tag "mainmenu/sticky.js"
+    / forms
+    = javascript_include_tag "form/jquery.form.min.js"
+    = javascript_include_tag "form/jquery.validate.min.js"
+    / cubeportfolio
+    = javascript_include_tag "cubeportfolio/jquery.cubeportfolio.min.js"
+    = javascript_include_tag "cubeportfolio/main.js"
+    / tabs
+    = javascript_include_tag "tabs/assets/js/responsive-tabs.min.js"
+    / <script src="/javascripts/tabs//javascripts/responsive-tabs.min.js" type="text/javascript"></script>
+    = javascript_include_tag "universal/custom.js"
+    / <script type="text/javascript" src="/javascripts/universal/custom.js"></script>
+  %body
+    .wrapper_boxed
+      .site_wrapper
+        %header#header
+          / Top header bar
+          #topHeader
+            .wrapper
+              .top_nav
+                .container
+                  .left
+                    %ul.topsocial
+                      %li
+                        %a#facebook-link{:href => "#"}
+                          %i.fa.fa-facebook
+                      %li
+                        %a#twitter-link{:href => "#"}
+                          %i.fa.fa-twitter
+                      %li
+                        %a#google-plus-link{:href => "#"}
+                          %i.fa.fa-google-plus
+                  / end left links
+                  .right
+                    %i.fa.fa-phone
+                    %strong{:style => "color: #696763"} (888) 123-456-7890
+                    %i.fa.fa-envelope
+                    %a{:href => "mailto:info@website.com", :style => "color: #696763"} info@website.com
+                  / end right links
+          / end top navigations
+          #trueHeader
+            .wrapper
+              .container
+                / Logo
+                .logo
+                  %a#logo{:href => "index"}
+                / Navigation Menu
+                %nav.menu_main
+                  .navbar.yamm.navbar-default
+                    .container
+                      .navbar-header
+                        .navbar-toggle{:class => ".navbar-collapse .pull-right", "data-target" => "#navbar-collapse-1", "data-toggle" => "collapse"}
+                          %span Menu
+                          %button{:type => "button"}
+                            %i.fa.fa-bars
+                      #navbar-collapse-1.navbar-collapse.collapse.pull-right
+                        %ul.nav.navbar-nav
+                          %li.dropdown
+                            %a.active{:href => "index"} Home
+                          %li.dropdown
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} About Firm
+                            %ul.dropdown-menu.multilevel{:role => "menu"}
+                              %li
+                                %a{:href => "about.html"} About Page Style 1
+                              %li
+                                %a{:href => "about-2.html"} About Page Style 2
+                          %li.dropdown
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Practice Areas
+                            %ul.dropdown-menu.multilevel{:role => "menu"}
+                              %li
+                                %a{:href => "practice.html"} Practice Areas Style 1
+                              %li
+                                %a{:href => "practice-2.html"} Practice Areas Style 2
+                              %li
+                                %a{:href => "practice-3.html"} Practice Areas Style 3
+                              %li
+                                %a{:href => "practice-4.html"} Practice Areas Style 4
+                          %li.dropdown.yamm-fw
+                            %a{:href => "point_test"} Point Test
+                          %li.dropdown
+                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Resources
+                          %li.dropdown
+                            %a{:href => "contact"} Contact
+                / end Navigation Menu
+        = yield
+        %footer
+          .footer
+            .container
+              .left
+                %h5 Get Free Consultation
+                %h6 Available 24/7
+                %h3 (888) 123-456-7890
+              / end section
+              .center
+                %h5 Message Us Now
+                %h6 Available 24/7
+                %h3
+                  %a{:href => "mailto:info@website.com"} info@website.com
+              / end section
+              .right
+                %h5 Address Location
+                %h6
+                  No 1, James ST, WA 98122-1090 Fax: (888) 123-456-7899
+                  %br/
+                  %a{:href => "#"} View Map
+              / end section
+          / end footer
+          .copyrights
+            .container
+              .one_half Copyright © 2015 Powered By Xiaoyi Lu. All Rights Reserved
+              .one_half.last
+                %a{:href => "#"} Notices
+                |
+                %a{:href => "#"} Privacy Policy
+                |
+                %a{:href => "#"} Careers
+                |
+                %a{:href => "#"} Site Map
+          / end copyrights

@@ -1,0 +1,94 @@
+.content_fullwidth
+  .container
+    .one_half
+      %p Feel free to talk to our online representative at any time you please using our Live Chat system on our website or one of the below instant messaging programs.
+      %br/
+      %p
+        Please be patient while waiting for response. (24/7 Support!)
+        %strong Phone General Inquiries: 1-888-123-4567-8900
+      %br/
+      %br/
+      .cforms
+        %form#sky-form.sky-form{:action => "demo-contacts.php", :method => "post"}
+          %header
+            Contact
+            %strong Form
+          %fieldset
+            .row
+              %section.col.col-6
+                %label.label Name
+                %label.input
+                  %i.icon-append.icon-user
+                  %input#name{:name => "name", :type => "text"}/
+              %section.col.col-6
+                %label.label E-mail
+                %label.input
+                  %i.icon-append.icon-envelope-alt
+                  %input#email{:name => "email", :type => "email"}/
+            %section
+              %label.label Subject
+              %label.input
+                %i.icon-append.icon-tag
+                %input#subject{:name => "subject", :type => "text"}/
+            %section
+              %label.label Message
+              %label.textarea
+                %i.icon-append.icon-comment
+                %textarea#message{:name => "message", :rows => "4"}
+          %footer
+            %button.button{:type => "submit"} Send message
+          .message
+            %i.icon-ok
+            %p Your message was successfully sent!
+    .one_half.last
+      .address_info
+        %h4
+          Company
+          %strong Address
+        %ul
+          %li
+            %strong Company Name
+            %br/
+            No1 James Street Perth, WA
+            %br/
+            Telephone: +1 1234-567-89000
+            %br/
+            FAX: +1 0123-4567-8900
+            %br/
+            E-mail:
+            %a{:href => "mailto:mail@companyname.com"} mail@companyname.com
+            %br/
+            Website:
+            %a{:href => "index.html"} www.yoursitename.com
+      .clearfix
+      %h4
+        Find the
+        %strong Address
+      %script{:src => "https://maps.googleapis.com/maps/api/js?v=3.exp"}
+      %div{:style => "overflow:hidden;height:316px;width:557px;"}
+        #gmap_canvas{:style => "height:316px;width:557px;"}
+        :css
+          #gmap_canvas img{max-width:none!important;background:none!important}
+      %a{:href => "http://www.07casino.com"} more information
+      %script{:src => "http://embedmaps.com/google-maps-authorization/script.js?id=1e6ff3007127aeaf95df6fb2fdbf8d7e732a4dbe", :type => "text/javascript"}
+      :javascript
+        function init_map(){
+                   var myOptions = {
+                   zoom:12,center:new google.maps.LatLng(-31.9477327,115.85636769999996),
+                   mapTypeId: google.maps.MapTypeId.ROADMAP};
+                   map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                   marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-31.9477327,115.85636769999996)});
+                   infowindow = new google.maps.InfoWindow({
+                   content:'<strong>Don Office</strong><br>'+
+                   'James Street Northbridge<br>'+
+                   '6003 Perth<br>'
+                   });
+                   google.maps.event.addListener(marker, 'click', function(){
+                   infowindow.open(map,marker);
+                   });
+                   infowindow.open(map,marker);
+                   }
+                   google.maps.event.addDomListener(window, 'load', init_map);
+      %small
+        %a{:href => "https://www.google.com.au/maps/place/James+St,+Northbridge+WA+6003/data=!4m2!3m1!1s0x2a32bad3d1548305:0xf970628cb2576907?sa=X&ei=ygmZVYe7MOWOmwWj7oX4Dw&ved=0CCMQ8gEwAQ", :target => "_blank"} View Larger Map
+/ end content area
