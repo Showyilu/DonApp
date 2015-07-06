@@ -41,7 +41,7 @@
     = stylesheet_link_tag "javascripts/carouselowl/owl.transitions.css"
     = stylesheet_link_tag "javascripts/carouselowl/owl.carousel.css"
     / cubeportfolio
-    = stylesheet_link_tag "javascripts/cubeportfolio/cubeportfolio.min.css"
+    -# = stylesheet_link_tag "javascripts/cubeportfolio/cubeportfolio.min.css"
     / forms
     = stylesheet_link_tag "javascripts/form/sky-forms.css"
     / tabs
@@ -57,7 +57,7 @@
     = javascript_include_tag "masterslider/jquery.easing.min.js"
     -# = javascript_include_tag "masterslider/masterslider.min.js"
     / scroll up
-    = javascript_include_tag "scrolltotop/totop.js"
+    -# = javascript_include_tag "scrolltotop/totop.js"
     / <script src="/javascripts/scrolltotop/totop.js" type="text/javascript"></script>
     / sticky menu
     = javascript_include_tag "mainmenu/sticky.js"
@@ -65,7 +65,7 @@
     = javascript_include_tag "form/jquery.form.min.js"
     = javascript_include_tag "form/jquery.validate.min.js"
   
-    = javascript_include_tag "cubeportfolio/jquery.cubeportfolio.min.js"
+    -# = javascript_include_tag "cubeportfolio/jquery.cubeportfolio.min.js"
     = javascript_include_tag "cubeportfolio/main.js"
     / tabs
     = javascript_include_tag "tabs/assets/js/responsive-tabs.min.js"
@@ -120,24 +120,10 @@
                           %li.dropdown
                             %a.active{:href => "index"} Home
                           %li.dropdown
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} About Firm
-                            %ul.dropdown-menu.multilevel{:role => "menu"}
-                              %li
-                                %a{:href => "about.html"} About Page Style 1
-                              %li
-                                %a{:href => "about-2.html"} About Page Style 2
+                            %a{:href => "about_firm"} About Firm
                           %li.dropdown
-                            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Practice Areas
-                            %ul.dropdown-menu.multilevel{:role => "menu"}
-                              %li
-                                %a{:href => "practice.html"} Practice Areas Style 1
-                              %li
-                                %a{:href => "practice-2.html"} Practice Areas Style 2
-                              %li
-                                %a{:href => "practice-3.html"} Practice Areas Style 3
-                              %li
-                                %a{:href => "practice-4.html"} Practice Areas Style 4
-                          %li.dropdown.yamm-fw
+                            %a{:href => "visa_list"} Visa List
+                          %li.dropdown
                             %a{:href => "point_test"} Point Test
                           %li.dropdown
                             %a{:href => "resources"} Resources

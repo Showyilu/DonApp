@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   match 'contact' => "main#contact", :via => :get
   match 'index' => "main#index", :via => :get
   match 'point_test' => "main#point_test", :via => :get
+  match 'about_firm' => "main#about_firm", :via => :get
+  match 'visa_list' => "main#visa_list", :via => :get
   match 'resources' => "main#resources", :via => :get
 
 end

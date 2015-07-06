@@ -39,116 +39,56 @@
       %a.button7{:href => "#"} Read More
     / end section
 / end features section 2
-.clearfix
-.feature_sec4
+
+.feature_sec5
   .container
-    .title11
-      %h2
-        Practice
-        %strong Areas
-        %span.line2
-    %br/
-    #grid-container.cbp-l-grid-fullScreen.smallthu
-      %ul
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img5.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-briefcase
-                    %br/
-                    %strong Business & Financial
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img6.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-home
-                    %br/
-                    %strong Real Estate & Land
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img7.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-medkit
-                    %br/
-                    %strong Medical Malpractice
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img8.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-car
-                    %br/
-                    %strong Vehicle Accidents
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img9.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-users
-                    %br/
-                    %strong Family Law
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img10.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-edit
-                    %br/
-                    %strong Premises Liability
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img11.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-money
-                    %br/
-                    %strong Business & Tax
-        / end item
-        %li.cbp-item
-          %a.cbp-caption{:href => "javascript:;"}
-            .cbp-caption-defaultWrap
-              = image_tag "site-img12.jpg"
-            .cbp-caption-activeWrap
-              .cbp-l-caption-alignLeft
-                .cbp-l-caption-body
-                  .cbp-l-caption-title
-                    %i.fa.fa-university
-                    %br/
-                    %strong Other Cases
-        / end item
-    .cbp-l-loadMore-text
-      .cbp-l-loadMore-text-link{"data-href" => "ajax/loadMore.html"}
-/ end features section 2
+    .two_third
+      -# %img.img_left1.animate{:alt => "", "data-anim-delay" => "500", "data-anim-type" => "fadeInRight", :src => "images/site-img13.jpg"}/
+      .img_left1
+        =image_tag 'site-img13.jpg'
+      %h2.small
+        About
+        %strong Me
+      %p
+        Long established fact that a reader will be distracted by the readable
+        %strong content of a page when
+        looking at layout The point of using is has a more less of letters.
+      %br/
+      %p
+        As opposed to using content here content here making it look like readable English.
+        %strong Many desktop publishing packages and web page editors now use the Lorem
+        Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by sometimes packages on purpose.
+      %br/
+      %span.big_text1 Call Us Confidentially Now:
+      \ 
+      %span.big_text1.color (888) 123-456-7890
+      %br/
+      %br/
+      .alicent
+        =image_tag 'h-line10.png'
+        %br/
+        %br/
+        .scriptfont Chirs Nicholas
+    / end section
+    .one_third.last.animate{"data-anim-delay" => "200", "data-anim-type" => "fadeIn"}
+      %h2.small
+        Case
+        %strong Results
+      .caseresult
+        .inborder
+          %p
+            %span.big_text1 $4.9 billion
+            in verdicts and settlements over 35 years. Does not reflect adjustments for fees, costs, or medical liens.
+          .divider_line22
+          %p
+            %span.big_text1 $1 Million
+            Settlement; School Student Suffers Brain Injury in Truck-Auto Crash.
+          .divider_line22
+          %p
+            %span.big_text1 $3.75 Million
+            Undue Influence to Disabled Woman in her Estate Trust Decisions Results in Settlement.
+
+
 .clearfix
 .feature_sec9
   .container.transpef
@@ -193,82 +133,3 @@
     .clearfix.margin_top4
 / end features section 9
 .clearfix
-
-
-:javascript
-  (function($) {
-
-    var slider = new MasterSlider();
-    // adds Arrows navigation control to the slider.
-    slider.control('arrows');
-    slider.control('bullets');
-    slider.setup('masterslider' , {
-       width:1400,    // slider standard width
-       height:580,   // slider standard height
-       space:0,
-       speed:45,
-       loop:true,
-       preload:0,
-       autoplay:true,
-       view:"basic"
-    });
-
-     $("#sky-form").validate(
-     {         
-       // Rules for form validation
-       rules:
-       {
-         name:
-         {
-           required: true
-         },
-         email:
-         {
-           required: true,
-           email: true
-         },
-         message:
-         {
-           required: true,
-           minlength: 10
-         }
-       },
-                 
-       // Messages for form validation
-       messages:
-       {
-         name:
-         {
-           required: 'Please enter your name',
-         },
-         email:
-         {
-           required: 'Please enter your email address',
-           email: 'Please enter a VALID email address'
-         },
-         message:
-         {
-           required: 'Please enter your message'
-         }
-       },
-                 
-       // Ajax form submition          
-       submitHandler: function(form)
-       {
-         $(form).ajaxSubmit(
-         {
-           success: function()
-           {
-             $("#sky-form").addClass('submited');
-           }
-         });
-       },
-       
-       // Do not change code below
-       errorPlacement: function(error, element)
-       {
-         error.insertAfter(element.parent());
-       }
-     });
-  
-  })(jQuery);

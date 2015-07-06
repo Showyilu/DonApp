@@ -12,6 +12,14 @@ class MainController < ActionController::Base
     render :point_test, :layout => 'application'
   end
 
+  def visa_list
+    render :visa_list, :layout => 'application'
+  end
+
+  def about_firm
+    render :about_firm, :layout => 'application'
+  end
+
   def resources
     render :resources, :layout => 'application'
   end

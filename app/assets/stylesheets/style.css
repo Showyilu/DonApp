@@ -196,7 +196,7 @@
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo.png) no-repeat center top;
+	background:url(logo.png) no-repeat center top;
 }
 
 #topHeader #logo{
@@ -207,7 +207,7 @@
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo2.png) no-repeat center top;
+	background:url(logo2.png) no-repeat center top;
 }
 
 #topHeader #logo3{
@@ -218,7 +218,7 @@
 	margin-top:0px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo.png) no-repeat left top;
+	background:url(logo.png) no-repeat left top;
 }
 
 #trueHeader #logo4{
@@ -229,7 +229,7 @@
 	margin-top:16px;
 	position: relative;
 	text-indent:-999em;
-	background:url(../images/logo4.png) no-repeat center top;
+	background:url(logo4.png) no-repeat center top;
 }
 
 
@@ -293,11 +293,11 @@
 	text-indent:-5555em;
 	line-height:100;
 	overflow:hidden;
-	background: #d9d9d9 url(../images/top-site-search-icon.png) no-repeat center 5px;
+	background: #d9d9d9 url(top-site-search-icon.png) no-repeat center 5px;
 	border:0;
 }
 #topsitesearchform #searchsubmit:hover{
-	background: #999 url(../images/top-site-search-icon.png) no-repeat center 5px;
+	background: #999 url(top-site-search-icon.png) no-repeat center 5px;
 }
 
 .top_nav ul.topsocial {
@@ -549,7 +549,7 @@
 	width: 100%;
 	text-align: center;
 	padding: 0px 0px 0px 0px;
-	background: #eee url(../images/texture3.jpg) repeat left top;
+	background: #eee url(texture3.jpg) repeat left top;
 }
 .feature_sec2 .one_fourth {
 	padding: 60px 25px 72px 25px;
@@ -567,7 +567,7 @@
 	text-align: center;
 	vertical-align: middle;
 	line-height: 110px;
-	background: url(../images/circle1.png) no-repeat center top;
+	background: url(circle1.png) no-repeat center top;
 	margin-bottom: 30px;
 }
 .feature_sec2 .one_fourth:hover,
@@ -691,7 +691,7 @@
 	width: 100%;
 	padding: 90px 0px 100px 0px;
 	text-align: center;
-	background: #1e1e1e url(../images/texture4.png) repeat left top;
+	background: #1e1e1e url(texture4.png) repeat left top;
 }
 .feature_sec6 .one_third {
 	background: #353535;
@@ -875,7 +875,7 @@
 	width: 100%;
 	padding: 100px 0px 0px 0px;
 	text-align: center;
-	background: #1e1e1e url(../images/texture1.jpg) repeat left top;
+	background: #1e1e1e url(texture1.jpg) repeat left top;
 	color: #fff;
 }
 .feature_sec9 .sky-form strong {
@@ -888,7 +888,7 @@
 	padding-bottom: 35px;
 }
 .feature_sec9 .transpef {
-	background: url(../images/fade1.png) no-repeat center bottom;
+	background: url(fade1.png) no-repeat center bottom;
 }
 
 /* features section 10 */
@@ -897,7 +897,7 @@
 	width: 100%;
 	padding: 75px 0px 64px 0px;
 	text-align: left;
-	background: #eee url(../images/texture2.png) repeat left top;
+	background: #eee url(texture2.png) repeat left top;
 }
 .feature_sec10 img {
 	width: 100%;
@@ -963,7 +963,7 @@
 .feature_sec13 .peoimg {
 	float: left;
 	width: 100%;
-	background: url(../images/aroow4.png) no-repeat 30px top;
+	background: url(aroow4.png) no-repeat 30px top;
 }
 .feature_sec13 .peoimg img {
 	float: left;
@@ -1278,7 +1278,7 @@
 	height: 18px;
 	margin-top: -18px;
 	text-align: center;
-	background: url(../images/graph1.png) no-repeat center top;
+	background: url(graph1.png) no-repeat center top;
 }
 .footer2 .fotcols {
 	float: left;
@@ -1353,11 +1353,11 @@
 	float: left;
 	width: 100%;
 	color: #999;
-	background: #1e1e1e url(../images/texture1.jpg) repeat left top;
+	background: #1e1e1e url(texture1.jpg) repeat left top;
 }
 .footer2 .transpef {
 	padding: 63px 0px 58px 0px;
-	background: url(../images/fade1.png) no-repeat center bottom;
+	background: url(fade1.png) no-repeat center bottom;
 }
 .footer2 .footersecs h3 {
 	margin-bottom: 14px;
@@ -1482,13 +1482,21 @@
 	float: left;
 	width: 100%;
 	height: 400px;
-	background: #000 url(../images/site-img28.jpg) no-repeat center top;
+	background: #000 url(site-img28.jpg) no-repeat center top;
 }
+
+.page_title.three {
+	float: left;
+	width: 100%;
+	height: 400px;
+	background: #000 url(site-fullimg7.jpg) no-repeat center top;
+}
+
 .page_title.two {
 	float: left;
 	width: 100%;
 	height: 400px;
-	background: #000 url(../images/site-fullimg8.jpg) no-repeat center top;
+	background: #000 url(site-fullimg8.jpg) no-repeat center top;
 }
 .page_title h1 {
 	float: left;
@@ -1502,14 +1510,14 @@
 	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 0px;
-	background: rgba(215, 2, 4, 0.9) url(../images/aroow3.png) no-repeat right 40px;
+	background: rgba(215, 2, 4, 0.9) url(aroow3.png) no-repeat right 40px;
 }
 
 .page_title2 {
 	float: left;
 	width: 100%;
 	padding: 40px 0px;
-	background: #eee url(../images/site-fullimg3.png) no-repeat center top;
+	background: #eee url(site-fullimg3.png) no-repeat center top;
 }
 .page_title2 h1 {
 	float: left;
@@ -1543,7 +1551,7 @@
 	width: 100%;
 	min-height: 400px;
 	text-align: left;
-	background: url(../images/site-fullimg4.jpg) no-repeat center top;
+	background: url(site-fullimg4.jpg) no-repeat center top;
 }
 .full_biohead img {
 	float: left;
@@ -1819,7 +1827,7 @@ ul.post_meta_links_small {
 	padding-top: 7px;
 	color: #fff;
 	text-decoration: none;
-	background: url(../images/skin01/but_post_readmore.jpg) no-repeat left top;
+	background: url(skin01/but_post_readmore.jpg) no-repeat left top;
 }
 .post_readmore:hover {
 	float: right;
@@ -1829,7 +1837,7 @@ ul.post_meta_links_small {
 	padding-top: 7px;
 	color: #fff;
 	text-decoration: none;
-	background: url(../images/skin01/but_post_readmore_hover.jpg) no-repeat left top;
+	background: url(skin01/but_post_readmore_hover.jpg) no-repeat left top;
 }
 .sharepost {
 	float: left;
