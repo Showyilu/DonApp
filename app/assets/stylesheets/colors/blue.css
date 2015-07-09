@@ -1,14 +1,14 @@
 #trueHeader #logo{
-	background:url(../../images/colors/blue/logo.png) no-repeat center top;
+	background:image_url(colors/blue/logo) no-repeat center top;
 }
 #topHeader #logo{
-	background:url(../../images/colors/blue/logo2.png) no-repeat center top;
+	background:image_url(colors/blue/logo2) no-repeat center top;
 }
 #topHeader #logo3{
-	background:url(../../images/colors/blue/logo.png) no-repeat left top;
+	background:image_url(colors/blue/logo) no-repeat left top;
 }
 #trueHeader #logo4{
-	background:url(../../images/colors/blue/logo4.png) no-repeat center top;
+	background:image_url(colors/blue/logo4) no-repeat center top;
 }
 
 ul.nav>li>a.active {
@@ -80,7 +80,7 @@ ul.nav .dropdown li a.active {
 }
 
 .page_title h1 {
-	background: rgba(49, 131, 215, 0.9) url(../../images/aroow3.png) no-repeat right 40px;
+	background: rgba(49, 131, 215, 0.9) image_url(aroow3) no-repeat right 40px;
 }
 
 .feature_sec12 i {
@@ -147,10 +147,10 @@ ul.nav .dropdown li a.active {
     color: #3183d7;
 }
 .st-accordion-four ul li.st-open > a span{
-	background: transparent url(../../images/colors/blue/minus-color.png) no-repeat center center;
+	background: transparent image_url(colors/blue/minus-color) no-repeat center center;
 }
 .st-accordion-four ul li > a span{
-	background: transparent url(../../images/colors/blue/plus-color.png) no-repeat center center;
+	background: transparent image_url(colors/blue/plus-color) no-repeat center center;
 }
 .st-accordion-four ul li > a:hover{
     color: #3183d7;
@@ -275,7 +275,7 @@ ul.tabs li.active, html ul.tabs li.active a,  html ul.tabs li.active a:hover  {
     color: #3183d7;
 }
 .st-accordion ul li > a span{
-	background: transparent url(../../images/colors/blue/down.png) no-repeat center center;
+	background: transparent image_url(colors/blue/down) no-repeat center center;
 }
 
 #bar{
@@ -289,15 +289,15 @@ ul.tabs li.active, html ul.tabs li.active a,  html ul.tabs li.active a:hover  {
 
 
 
-.acc-trigger a { background: url(../../images/colors/blue/accordion-ico.png) no-repeat 14px 13px;}
+.acc-trigger a { background: image_url(colors/blue/accordion-ico) no-repeat 14px 13px;}
 .acc-trigger a:hover { color: #3183d7; border-bottom: 1px solid #fff;  }
 .acc-trigger.active a { color: #3183d7; background-position: 20px -58px; cursor: default;	}
-.acc-trigger a { background: url(../../images/colors/blue/accordion-ico.png) no-repeat 14px 13px;}
+.acc-trigger a { background: image_url(colors/blue/accordion-ico) no-repeat 14px 13px;}
 .acc-trigger a:hover { color: #3183d7; border-bottom: 1px solid #fff;  }
 .acc-trigger.active a { color: #3183d7; background-position: 20px -58px; cursor: default;	}
 .acc-trigger a:hover, .acc-trigger.active a, .acc-trigger.active a:hover { color: #3183d7; border-bottom: 1px solid #fff; }
 
-.accrodation .acc-trigger a { background: url(../../images/colors/blue/accordion-ico.png) no-repeat 14px 13px;}
+.accrodation .acc-trigger a { background: image_url(colors/blue/accordion-ico) no-repeat 14px 13px;}
 .accrodation .acc-trigger a:hover { color: #3183d7; border-bottom: 1px solid #fff;  }
 .accrodation .acc-trigger.active a { color: #3183d7; background-position: 14px -58px; cursor: default;	}
 .accrodation .acc-trigger.active a:hover { color: #3183d7; border-bottom: 1px solid #fff; }
@@ -441,7 +441,7 @@ ul.tabs li.active, html ul.tabs li.active a,  html ul.tabs li.active a:hover  {
 }
 
 .divider_line11 {
-	background: url(../../images/colors/blue/h-line5.png) no-repeat center bottom;
+	background: image_url(colors/blue/h-line5) no-repeat center bottom;
 }
 
 .feature_sec1 h5 strong {
