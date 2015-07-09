@@ -9,13 +9,9 @@ Rails.application.config.assets.precompile += %w(
   style.css
   reset.css
   responsive-leyouts.css
-  shortcodes.css
   javascripts/style-switcher/color-switcher.css
   javascripts/mainmenu/bootstrap.min.css
   javascripts/mainmenu/menu.css
-  javascripts/carouselowl/owl.transitions.css
-  javascripts/carouselowl/owl.carousel.css
-  javascripts/cubeportfolio/cubeportfolio.min.css
   javascripts/form/sky-forms.css
   javascripts/tabs/assets/css/responsive-tabs2.css
   colors/blue.css
