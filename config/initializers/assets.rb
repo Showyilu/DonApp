@@ -8,6 +8,7 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( 
   style.css
   reset.css
+  shortcodes.css
   responsive-leyouts.css
   javascripts/style-switcher/color-switcher.css
   javascripts/mainmenu/bootstrap.min.css
