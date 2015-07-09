@@ -24,27 +24,28 @@
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
-    = stylesheet_link_tag "reset.css"
-    = stylesheet_link_tag "style.css"
-    = stylesheet_link_tag "shortcodes.css"
-    / animations
-    -# = stylesheet_link_tag "javascripts/animations/css/animations.min.css"
-    / responsive devices styles
-    = stylesheet_link_tag "responsive-leyouts.css"
-    / shortcodes
-    / mega menu
+    = stylesheet_link_tag "reset"
+    = stylesheet_link_tag "style"
+    
+    
+    = stylesheet_link_tag "responsive-leyouts"
+
+    = stylesheet_link_tag "shortcodes"
+
+    = stylesheet_link_tag "colors/blue"
+    
     = stylesheet_link_tag "javascripts/mainmenu/bootstrap.min.css"
-    = stylesheet_link_tag "javascripts/mainmenu/menu.css"
+    = stylesheet_link_tag "javascripts/mainmenu/menu"
     / MasterSlider
-    -# = stylesheet_link_tag "javascripts/masterslider/style/masterslider.css"
-    -# = stylesheet_link_tag "javascripts/masterslider/skins/default/style.css"
+    -# = stylesheet_link_tag "javascripts/masterslider/style/masterslider"
+    -# = stylesheet_link_tag "javascripts/masterslider/skins/default/style"
     / owl carousel
     / cubeportfolio
-    -# = stylesheet_link_tag "javascripts/cubeportfolio/cubeportfolio.min.css"
+    -# = stylesheet_link_tag "javascripts/cubeportfolio/cubeportfolio.min"
     / forms
-    = stylesheet_link_tag "javascripts/form/sky-forms.css"
+    = stylesheet_link_tag "javascripts/form/sky-forms"
     / tabs
-    = stylesheet_link_tag "javascripts/tabs/assets/css/responsive-tabs2.css"
+    = stylesheet_link_tag "javascripts/tabs/assets/css/responsive-tabs2"
     / ######### JS FILES #########
     = javascript_include_tag "universal/jquery.js"
     = javascript_include_tag "tabs/assets/js/responsive-tabs.min.js"
