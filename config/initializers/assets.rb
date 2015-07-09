@@ -8,7 +8,6 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( 
   style.css
   reset.css
-  javascripts/animations/css/animations.min.css
   responsive-leyouts.css
   shortcodes.css
   javascripts/style-switcher/color-switcher.css
@@ -36,7 +35,6 @@ Rails.application.config.assets.precompile += %w(
   masterslider/masterslider.min.js
   mainmenu/customeUI.js
   mainmenu/bootstrap.min.js
-  animations/js/animations.min.js
   universal/jquery.js
   scrolltotop/totop.js
   mainmenu/sticky.js
