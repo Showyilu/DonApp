@@ -549,7 +549,7 @@
 	width: 100%;
 	text-align: center;
 	padding: 0px 0px 0px 0px;
-	background: #eee image-url(texture3) repeat left top;
+	background: #eee image-url('texture3.jpg') repeat left top;
 }
 .feature_sec2 .one_fourth {
 	padding: 60px 25px 72px 25px;
@@ -567,7 +567,7 @@
 	text-align: center;
 	vertical-align: middle;
 	line-height: 110px;
-	background: image-url(circle1) no-repeat center top;
+	background: image-url('circle1.png') no-repeat center top;
 	margin-bottom: 30px;
 }
 .feature_sec2 .one_fourth:hover,
@@ -2385,6 +2385,6 @@ ul.recent_posts_list {
     right:20px;
     display:none;
     text-indent:-9999px;
-    background: image-url('scroll-top-arrow') no-repeat left top;
+    background: image-url('scroll-top-arrow.png') no-repeat left top;
 	z-index: 999;
 }

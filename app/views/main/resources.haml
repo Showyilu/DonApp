@@ -3,59 +3,150 @@
     %h1 Resources
 
 .resources
+  .container
+    %ul.tabs3{:style => 'margin-top: 30px;'}
+      %li.active
+        %a{:href => "#example-3-tab-1", :target => "_self"} Forms
+      %li
+        %a{:href => "#example-3-tab-2", :target => "_self"} Useful links
+      %li
+        %a{:href => "#example-3-tab-3", :target => "_self"} Frequently Asked Questions
 
-  %ul.VisaForms
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/character-requirements/character-statutory-declaration.pdf", :target => "_blank"} Statutory Declaration
-    %li
-      %a{:href => "http://www.afp.gov.au/what-we-do/police-checks/national-police-checks.aspx", :target => "_blank"} Australian Federal Police Clearance – online
-    %li
-      %a{:href => "https://afpnationalpolicechecks.converga.com.au/static/images/afp/afp_online_form.pdf", :target => "_blank"} Australian Federal Police Clearance – offline
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/pdf/26.pdf", :target => "_blank"} Medical Form (26)
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/pdf/160.pdf", :target => "_blank"} X-Ray Form (160)
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/health-requirements/health-exam.htm", :target => "_blank"} Health Matrix (1163i)
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/pdf/80.pdf", :target => "_blank"} Form 80
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/pdf/1221.pdf", :target => "_blank"} Form 1221
-    %li
-      %a{:href => "http://www.immi.gov.au/allforms/application-forms/forms_num1.htm", :target => "_blank"} Other forms are available on DIAC’s forms page here
+        
+    .tabs-content3.two
+      #example-3-tab-1.tabs-panel3
+        %ul.VisaForms
+          %li
+            %a{:href => "http://www.afp.gov.au/what-we-do/police-checks/national-police-checks.aspx", :target => "_blank"} Australian Federal Police Clearance – online
+          %li
+            %a{:href => "https://afpnationalpolicechecks.converga.com.au/static/images/afp/afp_online_form.pdf", :target => "_blank"} Australian Federal Police Clearance – offline
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/pdf/26.pdf", :target => "_blank"} Medical Form (26)
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/pdf/160.pdf", :target => "_blank"} X-Ray Form (160)
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/health-requirements/health-exam.htm", :target => "_blank"} Health Matrix (1163i)
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/pdf/80.pdf", :target => "_blank"} Form 80
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/pdf/1221.pdf", :target => "_blank"} Form 1221
+          %li
+            %a{:href => "http://www.immi.gov.au/allforms/application-forms/forms_num1.htm", :target => "_blank"} Other forms are available on DIAC’s forms page here
 
+      #example-3-tab-2.tabs-panel3
+        %ul.VisaInformation
+          %li
+            %p
+              %a{:href => "https://online.immi.gov.au/usm/services", :target => "_blank"} Immi Account
 
-  %ul.VisaInformation
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/allforms/character-requirements/character-penal.pdf", :target => "_blank"} Police clearance information
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/find-price/", :target => "_blank"} DIBP Fee Calculator
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/pdf/csol.pdf", :target => "_blank"} Skilled Occupation List (for 186, 187, 190, 402, 457, 489-state sponsored)
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/pdf/sol.pdf", :target => "_blank"} Skilled Occupation List for 189, 485, 495-relative sponsored
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/e_visa/vevo.htm", :target => "_blank"} VEVO – Online visa checks
-    %li
-      %p
-        %a{:href => "http://www.ielts.org/", :target => "_blank"} IELTS (English testing)
-    %li
-      %p
-        %a{:href => "https://www.naati.com.au/online/PDSearch/Skill?WizardId=00dc381b-d6da-4a9d-ac9b-669f5c2c4db8", :target => "_blank"} Translation of documents (in Australia)
-    %li
-      %p
-        %a{:href => "http://www.bupamvs.com.au/", :target => "_blank"} Medical Bookings in Australia (BUPA)
-    %li
-      %p
-        %a{:href => "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/9F38DBF4AE58BAD9CA257B9500131004?opendocument", :target => "_blank"} ANZSCO (occupation descriptions) online
-    %li
-      %p
-        %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/estimated-allocation-times.htm", :target => "_blank"} DIAC Processing Times (skilled visas)
-    %li
-      %p
-        %a{:href => "http://www.iscah.com/wp_files/wp-content/uploads/2013/07/medxrayHSA.What-do-I-need-to-bring-to-the-HSA-Medical-Examination11.09.doc", :target => "_blank"} Medical/Xray instructions
+          %li
+            %p
+              %a{:href => "http://www.border.gov.au/Busi/Visa", :target => "_blank"} Visa Entitlement Verification Online (VEVO)
+          
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/allforms/character-requirements/character-penal.pdf", :target => "_blank"} Police clearance information
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/find-price/", :target => "_blank"} DIBP Fee Calculator
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/pdf/csol.pdf", :target => "_blank"} Skilled Occupation List (for 186, 187, 190, 402, 457, 489-state sponsored)
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/pdf/sol.pdf", :target => "_blank"} Skilled Occupation List for 189, 485, 495-relative sponsored
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/e_visa/vevo.htm", :target => "_blank"} VEVO – Online visa checks
+          %li
+            %p
+              %a{:href => "http://www.ielts.org/", :target => "_blank"} IELTS (English testing)
+
+          %li
+            %p
+              %a{:href => "http://www.bupamvs.com.au/", :target => "_blank"} Medical Bookings in Australia (BUPA)
+          %li
+            %p
+              %a{:href => "http://www.abs.gov.au/ausstats/abs@.nsf/Latestproducts/9F38DBF4AE58BAD9CA257B9500131004?opendocument", :target => "_blank"} ANZSCO (occupation descriptions) online
+          %li
+            %p
+              %a{:href => "http://www.immi.gov.au/skilled/general-skilled-migration/estimated-allocation-times.htm", :target => "_blank"} DIAC Processing Times (skilled visas)
+          %li
+            %p
+              %a{:href => "http://www.iscah.com/wp_files/wp-content/uploads/2013/07/medxrayHSA.What-do-I-need-to-bring-to-the-HSA-Medical-Examination11.09.doc", :target => "_blank"} Medical/Xray instructions
+
+      #example-3-tab-3.tabs-panel3
+        %div{:style=> 'font-size: 14px; margin-top: -18px; color:  #D9534F; margin-bottom: 22px'}
+          Data coming from Immigration website. For more infomation, please visit 
+          %a{:href => "http://www.border.gov.au/Busi/Visa", :target => '_blank'} here.
+        %ul.data-entries
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/are-there-alternatives-to-a-split-family-application.aspx", :title => "Are there alternatives to a ‘split family’ application?"} Are there alternatives to a ‘split family’ application?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-can-i-get-sponsored-to-work-in-australia.aspx", :title => "How can I get sponsored to work in Australia?"} How can I get sponsored to work in Australia?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-can-i-update-my-expression-of-interest.aspx", :title => "How can I update my expression of interest?"} How can I update my expression of interest?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-do-i-become-a-sponsor.aspx", :title => "How do I become a sponsor?"} How do I become a sponsor?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-do-i-find-a-skilled-worker-from-outside-australia.aspx", :title => "How do I find a skilled worker from outside Australia?"} How do I find a skilled worker from outside Australia?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-do-i-lodge-an-expression-of-interest.aspx", :title => "How do I submit an expression of interest?"} How do I submit an expression of interest?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-do-i-do-if-i-get-an-invitation.aspx", :title => "What do I do if I get an invitation?"} What do I do if I get an invitation?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-an-expression-of-interest.aspx", :title => "What is an expression of interest?"} What is an expression of interest?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-an-invitation.aspx", :title => "What is an invitation?"} What is an invitation?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-an-occupation-ceiling.aspx", :title => "What is an occupation ceiling?"} What is an occupation ceiling?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-a-nomination.aspx", :title => "What is a nomination?"} What is a nomination?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-skillselect.aspx", :title => "What is SkillSelect?"} What is SkillSelect?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/what-is-the-points-test.aspx", :title => "What is the points test?"} What is the points test?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/Is-it-possible-to-invest-in-property.aspx", :title => "Is it possible to invest in residential real estate?"} Is it possible to invest in residential real estate?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/What-is-the-process-for-applying-for-a-provisional-Significant-Investor-visa.aspx", :title => "What is the process for applying for a provisional Significant Investor visa?"} What is the process for applying for a provisional Significant Investor visa?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/How-do-I-lodge-an-application.aspx", :title => "How do I lodge an application?"} How do I lodge an application?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/How-do-Australian-States-or-Territories-nominate-applicants.aspx", :title => "How do Australian State or Territory governments or Austrade nominate applicants?"} How do Australian State or Territory governments or Austrade nominate applicants?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/Who-can-I-contact-for-further-information-about-the-Significant-Investor-visa.aspx", :title => "Who can I contact for further information about the Significant Investor visa?"} Who can I contact for further information about the Significant Investor visa?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/when-are-the-occupation-ceilings-posted-online.aspx", :title => "When are the Occupation ceilings posted online?"} When are the Occupation ceilings posted online?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/how-many-eois-can-i-submit.aspx", :title => "How many Expressions of Interest can I submit?"} How many Expressions of Interest can I submit?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/Are-there-exemptions-to-labour-market-testing-in-the-subclass-457-programme.aspx", :title => "Are there exemptions to labour market testing in the subclass 457 programme?"} Are there exemptions to labour market testing in the subclass 457 programme?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/error-message-when-i-used-vevo.aspx", :title => "Why did I get an error message when I used VEVO?"} Why did I get an error message when I used VEVO?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/trouble-creating-a-password.aspx", :title => "I am having trouble creating a SkillSelect password. What can I do? "} I am having trouble creating a SkillSelect password. What can I do?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/forgotten-password.aspx", :title => "I have forgotten my SkillSelect password. What can I do? "} I have forgotten my SkillSelect password. What can I do?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/login-errors-using-my-password.aspx", :title => "I am getting login errors using my SkillSelect password or pass phrase. What can I do? "} I am getting login errors using my SkillSelect password or pass phrase. What can I do?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/deewr-message.aspx", :title => "What should I do get a www.deewr.gov.au MSIS7001 message when I try to login to SkillSelect? "} What should I do get a www.deewr.gov.au MSIS7001 message when I try to login to SkillSelect?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/EOI-security-message.aspx", :title => "I receive a security reference message when trying to access my EOI in SkillSelect. What can I do?"} I receive a security reference message when trying to access my EOI in SkillSelect. What can I do?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/SkillSelect-redirect-issue.aspx", :title => "When I try to login into SkillSelect I am redirected to the SkillSelect home page. What can I do?"} When I try to login into SkillSelect I am redirected to the SkillSelect home page. What can I do?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/can-I-submit-an-EOI.aspx", :title => "Can I submit an EOI if I have not completed an English language test, skills assessment or Job Ready program?"} Can I submit an EOI if I have not completed an English language test, skills assessment or Job Ready program?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/provide-written-statement-in-EOI.aspx", :title => "Will I need to provide a written statement in my EOI?"} Will I need to provide a written statement in my EOI?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/cost-of-IELTS.aspx", :title => "If I am not invited can I be reimbursed for the cost of the IELTS or skills assessment?"} If I am not invited can I be reimbursed for the cost of the IELTS or skills assessment?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/session-expired-message.aspx", :title => "What should I do if I am getting a SkillSelect session expired message?"} What should I do if I am getting a SkillSelect session expired message?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/browser-error-message.aspx", :title => "What should I do if I get a browser error message when I try to login to SkillSelect?"} What should I do if I get a browser error message when I try to login to SkillSelect?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/entitled-to-review.aspx", :title => "If I am not invited to lodge a visa application, will I be entitled to review rights?"} If I am not invited to lodge a visa application, will I be entitled to review rights?
+          %li
+            %a{:target => '_blank', :href => "http://www.border.gov.au/FAQs/Pages/use-a-migration-agent.aspx", :title => "Can I use a migration agent to submit my EOI?"} Can I use a migration agent to submit my EOI?

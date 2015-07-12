@@ -276,7 +276,7 @@
   font-weight: 300;
 }
 .title8 .line{
-    background: image-url(h-line) no-repeat center top;
+    background: image-url('h-line.jpg') no-repeat center top;
     position: absolute;
     height: 1px;
     display: block;
@@ -343,7 +343,7 @@
   color: #999;
 }
 .title11 .line{
-    background: image-url(h-line8) no-repeat center top;
+    background: image-url('h-line8.png') no-repeat center top;
     height: 7px;
     display: block;
     bottom: 0px;
@@ -359,7 +359,7 @@
   margin: 18px auto 0 auto;
 }
 .title11 .line3{
-    background: image-url(h-line8) no-repeat center top;
+    background: image-url('h-line8.png') no-repeat center top;
     height: 7px;
     display: block;
     bottom: 0px;
@@ -367,7 +367,7 @@
   margin: 20px auto 0 auto;
 }
 .title11 .line4{
-    background: image-url(h-line8) no-repeat center top;
+    background: image-url('h-line8.png') no-repeat center top;
     height: 7px;
     display: block;
     bottom: 0px;
@@ -393,7 +393,7 @@
   color: #727272;
 }
 .title12 .line{
-    background: image-url(h-line) no-repeat center top;
+    background: image-url('h-line.jpg') no-repeat center top;
     position: absolute;
     height: 1px;
     display: block;
@@ -433,7 +433,7 @@
   padding-top: 67px;
   margin-bottom: 67px;
   text-align: center;
-  background: image-url(h-line) repeat-x left 81px;
+  background: image-url('h-line.jpg') repeat-x left 81px;
 }
 .divider_line3 i {
   color: #fff;
@@ -452,7 +452,7 @@
   padding-top: 67px;
   margin-bottom: 67px;
   text-align: center;
-  background: image-url(h-line) repeat-x left 89px;
+  background: image-url('h-line.jpg') repeat-x left 89px;
 }
 .divider_line4 i {
   color: #d3d3d3;
@@ -469,7 +469,7 @@
 .divider_line4.lessm {
   padding-top: 47px;
   margin-bottom: 47px;
-  background: image-url(h-line) repeat-x left 70px;
+  background: image-url('h-line.jpg') repeat-x left 70px;
 }
 
 .divider_line5 {
@@ -477,7 +477,7 @@
   width: 100%;
   padding-top: 67px;
   margin-bottom: 67px;
-  background: image-url(h-line) repeat-x left 82px;
+  background: image-url('h-line.jpg') repeat-x left 82px;
   text-align: center;
 }
 .divider_line5 i {

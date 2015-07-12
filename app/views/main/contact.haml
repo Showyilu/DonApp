@@ -13,7 +13,7 @@
       %br/
       %br/
       .cforms
-        %form#sky-form.sky-form{:action => "demo-contacts.php", :method => "post"}
+        %form#sky-form.sky-form{:action => "#", :method => "post"}
           %header
             Contact
             %strong Form
@@ -83,7 +83,7 @@
                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
                    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-31.9477327,115.85636769999996)});
                    infowindow = new google.maps.InfoWindow({
-                   content:'<strong>Don Office</strong><br>'+
+                   content:'<strong>Don Goh & Associates Office</strong><br>'+
                    'James Street Northbridge<br>'+
                    '6003 Perth<br>'
                    });
@@ -93,6 +93,7 @@
                    infowindow.open(map,marker);
                    }
                    google.maps.event.addDomListener(window, 'load', init_map);
+
       %small
         %a{:href => "https://www.google.com.au/maps/place/James+St,+Northbridge+WA+6003/data=!4m2!3m1!1s0x2a32bad3d1548305:0xf970628cb2576907?sa=X&ei=ygmZVYe7MOWOmwWj7oX4Dw&ved=0CCMQ8gEwAQ", :target => "_blank"} View Larger Map
 / end content area
