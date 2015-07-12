@@ -2388,3 +2388,21 @@ ul.recent_posts_list {
     background: image-url('scroll-top-arrow.png') no-repeat left top;
 	z-index: 999;
 }
+
+.point_test {
+	margin-left: 20px;
+
+	table {
+		padding: 70px 80px 0 80px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.point_test {
+		margin-left: 0px;
+
+		table {
+			padding: 0;
+		}
+	}
+}
