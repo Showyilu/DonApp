@@ -6,13 +6,13 @@
 %html.no-js{:lang => "en-gb"}
   / <![endif]
   %head
-    %title DonApp
+    %title= "Perth No.1 migration consultants & agents #{@page_name}"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "", :name => "keywords"}/
-    %meta{:content => "", :name => "description"}/
+    %meta{:content => "migration immigration agent consultant service", :name => "keywords"}/
+    %meta{:content => "#{@description}", :name => "description"}/
     / this styles only adds some repairs on idevices
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     / Google fonts - witch you want to use - (rest you can just remove)
